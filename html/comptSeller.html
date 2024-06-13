@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/comptSeller.css">
+
+    <title>AI-Fydik</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="logoiCons">
+                <div class="logo">
+                    <img src="../image/logo.svg">
+                </div>
+                <div class="stuff">
+                    <div class="notification">
+                        <img src="../image/Vector.png">
+                    </div>
+                    <div class="boite_message">
+                        <img src="../image/formkit_email.png">
+                    </div>
+                    <div class="photo_profil">
+                        <img src="../image/Group 105.png">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="informations">
+                <div class="barrier"></div>
+                <div class="infos">
+                    <div class="infopro">
+                        <img src="../image/Group 52.png">
+                        <p>المعلومات المهنية</p>
+                    </div>
+
+                    <div class="infoper">
+                        <img src="../image/Group 51.png">
+                        <p>المعلومات الشخصية</p>
+                    </div>
+                </div>
+            </div>
+            <form class="form" id="formS" action="" method="POST">
+                <div class="champ" id="reponceS"></div>
+                <div class="namelast">
+                    <div class="barrier"></div>
+                    <div class="inputs">
+                        <input type="number" name="numCl" id="numPhone" required><br><br>
+                        <label> : رقم الهاتف</label>
+                        <input type="text" name="lnameS" id="lnameS" required><br><br>
+                        <input type="text" name="fnameS" id="fnameS" required><br><br>
+                        <label> : الإسم الكامل</label>
+                    </div>
+                </div>
+                <div class="pics">
+                    <div class="barrier"></div>
+                    <!-- <div class="pictures">
+                        <input type="image" name="imageS">
+                        <input type="image" name="coverS">
+                        <p> : صورة الملف الشخصي و الغلاف</p>
+                    </div> -->
+                </div>
+                <div class="desc">
+                    <div class="barrier"></div>
+                    <div class="descript">
+                        <textarea rows="10" cols="50" name="description" id="description"
+                            style="resize: none;"></textarea>
+                        <label for="الوصف:"> : الوصف</label>
+                    </div>
+                </div>
+                <input type="hidden" id="selectedLanguages" name="languages">
+            </form>
+            <div class="labelang">
+                <div class="barrier"></div>
+                <div class="langag">
+                    <div class="lang">
+                        <input type="text" id="searchInput" class="inputFilter" placeholder="Search for a language">
+                        <select size="6" id="languages" name="languages[]" multiple required>
+                            <!-- Options will be populated here by JavaScript -->
+                        </select><br>
+                        <input type="text" id="selectedLanguagesDisplay" placeholder="Selected languages" readonly>
+                    </div>
+                    <label for="searchInput">:اللغة</label>
+                </div>
+            </div>
+            <div class="category">
+                <div class="barrier"></div>
+                <div class="categ">
+                    <div class="catalog">
+                        <select id="categories" name="categories" required>
+                            <!-- Options will be populated here by JavaScript -->
+                        </select>
+                        <div id="services">
+                            <!-- Services checkboxes will be populated here by JavaScript -->
+                        </div>
+                    </div>
+                    <label for="categories">مهنتك:</label>
+                </div>
+            </div>
+            <div class="skilldiv">
+                <div class="barrier"></div>
+                <div class="container">
+                    <input type="text" id="new-skill" placeholder="Add a new lang...">
+                    <button id="add-task-button">Add skill</button>
+                    <ul id="task-list"></ul>
+                </div>
+            </div>
+            <div class="lien">
+                <div class="barrier"></div>
+                <div class="lin">
+                    <div class="link">
+                        <input type="text" name="lien" id="lien">
+                        <label for="lien">Portfolio : موقعك أو </label>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" id="submit_S" value="submit" name="submit_s">
+        </div>
+    </div>
+    <script src="../js/insertseller.js"></script>
+
+    <script src="../js/comptseller.js"></script>
+    <!-- <script src="../js/gmail.js"></script>
+    <script src="../js/comptclient.js"></script> -->
+</body>
+
+</html>

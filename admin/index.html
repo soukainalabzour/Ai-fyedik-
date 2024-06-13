@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم الإدارية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="../image/Logo.png" alt="الشعار">
+            </div>
+            <h2>أدوات الإدارة</h2>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">لوحة التحكم</a></li>
+                    <li><a href="#clients">العملاء</a></li>
+                    <li><a href="#sellers">البائعين</a></li>
+                    <li><a href="#admins">المسؤولين</a></li>
+                    <li><a href="#orders">الطلبات</a></li>
+                    <li><a href="#settings">الإعدادات</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <section id="dashboard" class="active-section">
+                <div class="analytics-cards">
+                    <div class="card">
+                        <h3>إجمالي المستخدمين</h3>
+                        <p id="total-users">0</p>
+                    </div>
+                    <div class="card">
+                        <h3>إجمالي العملاء</h3>
+                        <p id="total-clients">0</p>
+                    </div>
+                    <div class="card">
+                        <h3>إجمالي البائعين</h3>
+                        <p id="total-sellers">0</p>
+                    </div>
+                    <div class="card">
+                        <h3>المشاريع المنجزة</h3>
+                        <p id="total-projects">0</p>
+                    </div>
+                </div>
+            </section>
+            <section id="clients">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>الاسم</th>
+                            <th>اللقب</th>
+                            <th>البريد الإلكتروني</th>
+                            <th>اللغة</th>
+                            <th>البلد</th>
+                            <th>المدينة</th>
+                            <th>العنوان</th>
+                            <th>رقم الهاتف</th>
+                            <th>إجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Client rows go here -->
+                    </tbody>
+                </table>
+            </section>
+            <section id="sellers">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>الاسم</th>
+                        <th>اللقب</th>
+                        <th>الوصف</th>
+                        <th>الرابط</th>
+                        <th>البريد الإلكتروني</th>
+                        <th>رقم الهاتف</th>
+                        <th>إجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Seller rows go here -->
+                    </tbody>
+                </table>
+            </section>
+            <section id="admins">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>المعرف</th>
+                            <th>الاسم</th>
+                            <th>البريد الإلكتروني</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Admin rows go here -->
+                    </tbody>
+                </table>
+            </section>
+            <section id="orders">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>اسم العميل</th>
+                            <th>اسم الخدمة</th>
+                            <th>اسم الفئة</th>
+                            <th>تاريخ الطلب</th>
+                            <th>حالة الطلب</th>
+                            <th>إجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Order rows go here -->
+                    </tbody>
+                </table>
+            </section>
+          
+            <section id="settings">
+                <h2>الإعدادات</h2>
+                
+                <div class="settings-category">
+                    <h3>الإعدادات العامة</h3>
+                    <button id="profile-settings">إعدادات الملف الشخصي</button>
+                    <button id="theme-settings">إعدادات الثيم</button>
+                    <button id="notification-settings">إعدادات الإشعارات</button>
+                </div>
+                
+                <div class="settings-category">
+                    <h3>إعدادات الأمان</h3>
+                    <button id="account-security">أمان الحساب</button>
+                    <button id="privacy-settings">إعدادات الخصوصية</button>
+                </div>
+                
+                <div class="settings-category">
+                    <h3>إعدادات النظام</h3>
+                    <button id="language-settings">إعدادات اللغة</button>
+                    <button id="timezone-settings">إعدادات المنطقة الزمنية</button>
+                </div>
+                
+                <div class="settings-category">
+                    <h3>إدارة المستخدمين</h3>
+                    <button id="roles-permissions">الأدوار والأذونات</button>
+                    <button id="activity-logs">سجلات النشاط</button>
+                </div>
+                
+                <div class="settings-category">
+                    <h3>إدارة البيانات</h3>
+                    <button id="data-backup">نسخ احتياطي للبيانات</button>
+                    <button id="data-export-import">تصدير/استيراد البيانات</button>
+                </div>
+                
+                <div class="settings-category">
+                    <h3>إعدادات التكامل</h3>
+                    <button id="api-keys">مفاتيح API</button>
+                    <button id="third-party-integrations">تكاملات الطرف الثالث</button>
+                </div>
+                
+                <div class="settings-category">
+                    <h3>الإعدادات المتقدمة</h3>
+                    <button id="developer-options">خيارات المطورين</button>
+                    <button id="feature-toggles">تبديل الميزات</button>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    overflow-x:hidden
+  }
+  
+  header{
+    height: 8vw;
+    width: 100vw;
+  }
+  .logoCon{
+    height: 5vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  .logo{
+    margin-left: 1vw;
+    height: 7vw;
+    width: 15vw;
+  }
+
+
+  .divSignseller{
+    position: absolute;
+  top: 50%;
+  left:50%;
+  width : 60vw;
+  height: 40vw;
+  background-color: #fffffff3;
+  z-index: 10;
+  transform: translate(-50% ,-50%);
+  border-radius: 3vw;
+  }
+  
+  .halfoneseller{
+    width: 30vw;
+  height:40vw ;
+  background-image: linear-gradient(to bottom,#17A8A8,#094242 );
+  border-top-left-radius: 3vw;
+  border-bottom-left-radius: 3vw;
+  }
+  
+  .halfoneseller img{
+    position: absolute;
+    bottom:0;
+    left:4vw;
+    width: 25vw;
+    height: 25vw;
+   }
+   .halfoneseller h1{
+    margin: 2vw;
+   color: #ffffff;
+   font-size: 2vw;
+   position: absolute;
+   left : 9vw;
+   direction: rtl;
+   }
+   .halfoneseller h4{
+   margin: 2vw;
+   color: #ffffff;
+   font-size: 1vw;
+   position: absolute;
+   left : 5vw;
+   top:5vw;
+   direction: rtl; 
+   text-align: center;
+   }
+   .halftwoseller{
+    position:absolute;
+    top:0 ;
+    right: 9vw;
+   
+  }
+  .halftwoseller h1{
+    position: relative;
+    right:-2vw;
+   margin: 2vw;
+   font-size: 3vw;
+   color:#17A8A8;
+  
+    
+  }
+  .accountseller{
+    margin: 2vw;
+    position: absolute;
+    left:4vw;
+    top:5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(118, 115, 115);
+    border-radius: 30VW;
+    width: 10vw;
+    height:2vw ; 
+    cursor: pointer;
+  }
+  .accountseller h6{
+    font-size: 0.8vw;
+    
+  }
+  .accountseller img{
+    width: 0.8vw;
+    height: 1vw;
+    
+  }
+  
+  .lineoneseller{
+    margin: 2vw;
+    position: absolute;
+    top:9vw;
+    left: -4vw;
+    border: 1px solid rgba(115, 117, 115, 0.354) ;
+    width: 27vw;
+    height: 2vw;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  .lineoneseller span{
+    position: absolute;
+    top: -0.8vw;
+    background-color: #ffffff;
+    width: 1vw;
+    height: 1vw;
+    right: 13.5vw;
+  
+  }
+  .questionseller{
+    position: absolute;
+    top :38vw;
+    left: 9vw;
+    font-size: 0.85vw;
+    font-weight: bold;
+  
+  }
+  .question1seller{
+    position: absolute;
+    top :38vw;
+    left: 4.5vw;
+  font-size: 0.85vw;
+  font-weight: bold;
+  text-decoration: underline;
+  }
+
+  .form{
+    position: absolute;
+   top: 15vw;
+  left:-2vw;
+  
+  }
+  
+  .form input{
+  border-radius: 0.4vw;
+  border: 0.1vw solid rgba(128, 128, 128, 0.265);
+  width: 26VW;
+  height: 2.5vw;
+  
+  }
+  .form label {
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+  
+  }
+  
+  #submitS {
+    position: absolute;
+    left: 9vw;
+    width: 8vw;
+    color: #ffffff;
+    background-color: #17A8A8;
+   }
